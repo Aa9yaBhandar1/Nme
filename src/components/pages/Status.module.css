@@ -1,4 +1,4 @@
-.watched_wishlist_container{
+/* .watched_wishlist_container{
     color: rgba(255, 255, 255, 0.8);
     padding: 8rem 3rem 3rem 3rem;
 }
@@ -28,9 +28,7 @@
 
 .watch_button:hover {
     background-color: rgba(230, 230, 250, 0.2);
-    /* border-color: rgba(230, 230, 250, 0.3); */
     transform: translateY(-1px);
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
     border-color: #a855f7;
     box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
     outline: none;
@@ -41,7 +39,7 @@
     box-shadow: none;
 }
 
-/* Container for the buttons */
+/* Container for the buttons 
 .watch_buttons_container{
     width: 100%;
     display: flex;
@@ -68,3 +66,173 @@
     background-color: darkred;
   }
   
+  @media screen and (max-width: 48rem) { /* 768px 
+  
+    .watch_buttons_container{
+        width: 100%;
+        display: flex;
+        gap: 3rem;
+        padding-top: 4rem;
+    }
+} */
+
+
+.watched_wishlist_container {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8rem 3rem 3rem 3rem;
+}
+
+.anime_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  width: 90%;
+  margin: 5rem 3rem 3rem 7rem;
+}
+
+.watch_button {
+  background-color: rgba(113, 83, 141, 0.959);
+  color: #e6e6fa;
+  padding: 0.9rem;
+  border: 0.0625rem solid rgba(247, 247, 252, 0.692);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  margin: 3rem 1rem 3rem 0;
+  width: 13rem;
+}
+
+.watch_button:hover {
+  background-color: rgba(230, 230, 250, 0.2);
+  transform: translateY(-0.0625rem);
+  border-color: #a855f7;
+  box-shadow: 0 0 0.9375rem rgba(168, 85, 247, 0.3);
+  outline: none;
+}
+
+.watch_button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.watch_buttons_container {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 4rem;
+}
+
+.delete_button {
+  background-color: rgba(230, 230, 250, 0.1);
+  color: #e6e6fa;
+  padding: 0.9rem;
+  border: 0.0625rem solid rgba(230, 230, 250, 0.2);
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  margin: 0 1rem 1rem 0;
+  width: 13rem;
+}
+
+.delete_button:hover {
+  background-color: darkred;
+}
+
+/* Large Screens (1440px and up) */
+@media screen and (min-width: 90rem) {
+  .anime_list {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 85rem;
+    margin: 5rem auto;
+  }
+}
+
+/* Desktop (1024px to 1439px) */
+@media screen and (max-width: 89.9375rem) {
+  .anime_list {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem auto;
+    width: 95%;
+  }
+
+
+}
+
+/* Tablet (768px to 1023px) */
+@media screen and (max-width: 63.9375rem) {
+  .watched_wishlist_container {
+    padding: 6rem 2rem 2rem;
+  }
+
+  .anime_list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem auto;
+  }
+
+  .watch_buttons_container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 3rem;
+    width: 100%;
+  }
+
+  .watch_button,
+  .delete_button {
+    width: 10rem;
+    margin: 0.5rem;
+  }
+}
+
+/* Large Mobile (481px to 767px) */
+@media screen and (max-width: 47.9375rem) {
+  .watched_wishlist_container {
+    padding: 5rem 1.5rem 1.5rem;
+  }
+
+  .anime_list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .watch_buttons_container {
+    padding-top: 2rem;
+  }
+
+  .watch_button,
+  .delete_button {
+    width: 100%;
+    font-size: 0.875rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Small Mobile (320px to 480px) */
+@media screen and (max-width: 30rem) {
+  .watched_wishlist_container {
+    padding: 4rem 1rem 1rem;
+  }
+
+  .anime_list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    width: 100%;
+  }
+
+  .watch_buttons_container {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .watch_button,
+  .delete_button {
+    width: 100%;
+    margin: 0;
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
+}

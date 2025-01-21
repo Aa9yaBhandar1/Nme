@@ -32,7 +32,7 @@ const AnimeDetail = () => {
   return (
     <div className={styles.anime_detail_total_container}>
 
-     <h1 className={styles.anime_detail_title}>{anime.data.title_english}</h1>
+     <h1 className={styles.anime_detail_title}>{anime.data.title_english == null ? anime.data.title : anime.data.title_english}</h1>
 
      <div className={styles.anime_detail_container}> 
       <div>

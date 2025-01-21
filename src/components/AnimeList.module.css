@@ -1,0 +1,164 @@
+.body_container{
+    background-color: #111827;
+}
+
+.total_container{
+    padding-top:3rem;
+    margin: 3rem 10rem 10rem 8rem;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.anime_list_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    width: 90%;
+}
+
+
+.anime_card{
+    color:rgba(255, 255, 255, 0.8);
+    border: 0.3rem solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 23rem;
+    z-index:1;
+    transition: all 0.3s ease;
+}
+
+.anime_card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    border: 2px solid rgba(168, 85, 247, 0.6);
+}
+
+.anime_card_image{
+
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.anime_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.anime_card:hover::before {
+    box-shadow: inset 0 0 20px rgba(168, 85, 247, 0.2);
+}
+.anime_card_title{
+    padding: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #1a1b26;
+    font-size: 16px;
+}
+.searchBox_container{
+    padding-top: 8rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to_flex{
+    display:flex;
+}
+    .searchBar {
+        width: 70rem;
+        height: 2rem;
+        padding: 12px 20px;
+        border: 2px solid #4a4a5a;
+        border-radius: 25px;
+        background-color: hsl(235, 19%, 13%);
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    
+    .searchBar:hover {
+        border-color: #a855f7;
+        box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+        outline: none;
+    }
+    
+    .searchBar:focus {
+        border-color: #a855f7;
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+        outline: none;
+    }
+    .searchBtn{
+        margin: 0.2rem 0 0 0.9rem;
+        padding: 0.3rem;
+        border-radius: 50%;
+        background-color: #a855f7;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 3.5rem;
+        height: 3.5rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .searchBtn:hover {
+        background-color: #8e42d6;;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #953fe6;;
+    }
+
+.pagination_container{
+    display:flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    padding-bottom: 5rem;
+}
+
+.paginationBtn{
+    margin: 0 2rem 0 2rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    background-color: #a855f7;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    height: 45px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.paginationBtn:hover{
+      background-color: #8e42d6;;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #953fe6;
+}
+
+.pagination_title{
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #1a1b26;
+    font-size: 16px;
+}

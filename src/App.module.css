@@ -1,0 +1,19 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light-bg);
+    color: var(--color-light-text);
+    transition: background-color var(--transition-duration),
+      color var(--transition-duration);
+  }
+  
+  .app--dark {
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-text);
+  }
+  
+  .app__main {
+    flex: 1;
+    padding-top: 4rem; /* 16 * 0.25rem */
+  }

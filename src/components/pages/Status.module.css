@@ -1,0 +1,69 @@
+.watched_wishlist_container{
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8rem 3rem 3rem 3rem;
+}
+
+.anime_list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    width: 90%;
+    margin: 5rem 3rem 3rem 7rem;
+    
+}
+
+.watch_button {
+    background-color: rgba(230, 230, 250, 0.1);
+    color: #e6e6fa;
+    padding: 0.9rem 0.9rem;
+    border: 1px solid rgba(230, 230, 250, 0.2);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.9rem;
+    margin: 3rem 1rem 3rem 0rem;
+    width: 13rem;
+}
+
+.watch_button:hover {
+    background-color: rgba(230, 230, 250, 0.2);
+    /* border-color: rgba(230, 230, 250, 0.3); */
+    transform: translateY(-1px);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    border-color: #a855f7;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+    outline: none;
+}
+
+.watch_button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Container for the buttons */
+.watch_buttons_container{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    padding-top: 4rem;
+}
+
+
+.delete_button {
+    background-color: rgba(230, 230, 250, 0.1);
+    color: #e6e6fa;
+    padding: 0.9rem 0.9rem;
+    border: 1px solid rgba(230, 230, 250, 0.2);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.9rem;
+    margin: 0rem 1rem 1rem 0rem;
+    width: 13rem;
+}
+
+  
+  .delete_button:hover {
+    background-color: darkred;
+  }
+  

@@ -163,3 +163,53 @@
     background-color: #1a1b26;
     font-size: 16px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 64rem) { /* 1024px */
+    .total_container {
+      margin: 2rem 1rem;
+    }
+    .anime_card{
+        width: 90%;
+    }
+    
+    .anime_list_container {
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 48rem) { /* 768px */
+    .searchBox_container {
+      padding-top: 3rem;
+    }
+    
+    .searchBar {
+      font-size: 0.9rem;
+    }
+    
+    .searchBtn {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 36rem) { /* 576px */
+    .total_container {
+      margin: 1rem 0.5rem;
+    }
+    
+    .anime_list_container {
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      gap: 1rem;
+    }
+    
+    .anime_card_image {
+      height: 18rem;
+    }
+    
+    .paginationBtn {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }

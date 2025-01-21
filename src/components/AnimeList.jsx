@@ -33,7 +33,9 @@ const AnimeList = () => {
   return (
     <div className={styles.body_container}>
       <div className={styles.searchBox_container}>
-      <SearchBar className={styles.searchBar} onSearch={handleSearch} />
+      <SearchBar 
+      className={styles.searchBar} 
+      onSearch={handleSearch} />
       </div>
       <div className={styles.total_container}>
       <div className={styles.anime_list_container}>
@@ -44,7 +46,7 @@ const AnimeList = () => {
             // className="anime-item"
           >
             <img className={styles.anime_card_image} src={anime.images.webp.image_url} alt={anime.title} />
-            <h3 className={styles.anime_card_title}>{anime.title}</h3>
+            <h3 className={styles.anime_card_title}>{anime.title_english}</h3>
           </div>
         ))}
       </div>

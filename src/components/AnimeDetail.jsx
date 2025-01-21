@@ -32,7 +32,7 @@ const AnimeDetail = () => {
   return (
     <div className={styles.anime_detail_total_container}>
 
-     <h1 className={styles.anime_detail_title}>{anime.data.title}</h1>
+     <h1 className={styles.anime_detail_title}>{anime.data.title_english}</h1>
 
      <div className={styles.anime_detail_container}> 
       <div>
@@ -55,10 +55,13 @@ const AnimeDetail = () => {
 
       </div>
      <div className={styles.anime_detail_box}>
+      <p className={styles.anime_detail_title_jap}>Title (Japanese): {anime.data.title_japanese}</p>
       <p className={styles.anime_detail_description}>{anime.data.synopsis}</p> 
+      <p>Genre: {anime.data.genres[0].name}</p>
       <p>Status: {anime.data.status}</p>
+      <p>Aired: {anime.data.aired.string}</p>
       <p>Duration: {anime.data.duration}</p>
-      <p>Rating: {anime.data.rating}</p>
+      <p>Rating: {anime.data.score}</p>
       <p>Episodes: {anime.data.episodes}</p>
       </div>
     </div>

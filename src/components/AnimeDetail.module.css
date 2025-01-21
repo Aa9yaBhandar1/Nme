@@ -18,6 +18,12 @@
 .anime_detail_title{
     margin-bottom: 5rem;
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+    /* text-decoration: underline; */
+    color: rgba(161, 118, 201, 0.959);
 }
 
 
@@ -31,4 +37,9 @@
     width: 80%;
     margin-top: 0;
     text-align: justify;
+}
+
+.anime_detail_title_jap{
+    font-size: 2rem;
+    font-weight: bold;
 }

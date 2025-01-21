@@ -157,7 +157,15 @@
     width: 95%;
   }
 
+  .watch_buttons_container{
 
+    justify-content: center;
+  }
+
+  .watch_button{
+    margin: 2rem 0 0 2rem;
+    width: 20rem;
+  }
 }
 
 /* Tablet (768px to 1023px) */
